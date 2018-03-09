@@ -1,0 +1,25 @@
+<ion-view title="" id="page5" style="">
+  <ion-nav-buttons side="right">
+      <button class="button" ng-click="shareViaFacebook(post.intotext,post.title,post.picture.large,post.link)">
+        <i class="icon ion-social-facebook"></i>
+      </button>
+      <button class="button" ng-click="shareViaTwitter(post.intotext,post.title,post.picture.large,post.link)"><i class="icon ion-social-twitter"></i></button>
+      <button class="button" ng-click="share(post.intotext,post.title,post.picture.large,post.link)">
+        <i class="icon ion-android-share"></i>
+      </button>
+  </ion-nav-buttons>
+  <ion-content class="has-header content-post" padding="true">
+    <div class="list">
+      <h2 class="title">{{post.title}}</h2>
+      <p class="titleNote">
+        {{post.category}} / {{post.publishedby}} / {{post.timeago}}
+      </p>
+      <img src="{{post.picture.thumbnail}}">
+      <div class="content-text" ng-bind-html="post.content.html"></div>
+    </div>
+    <div class="row">
+      <div class="col col-50"><button class="button button-full button-outline" ng-click="shareViaFacebook(post.intotext,post.title,post.picture.large,post.link)">Facebook</button></div>
+      <div class="col col-50"><button class="button button-full button-outline" ng-click="shareViaTwitter(post.intotext,post.title,post.picture.large,post.link)">Twitter</button></div>
+    </div>
+  </ion-content>
+</ion-view>

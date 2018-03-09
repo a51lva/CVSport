@@ -1,0 +1,26 @@
+<ion-view view-title="{{title}}">
+  <ion-nav-buttons side="right">
+      <button class="button" ng-click="load()">
+        <i class="icon ion-refresh"></i>
+      </button>
+  </ion-nav-buttons>
+  <ion-content padding="true" class="has-header">
+  <div class="content-list noticias" >
+    <div class="card" ng-repeat="post in noticias | limitTo:elementsSize track by $index">
+      <a href="#/app/noticia/{{post.id}}">
+      <div class="item item-body">
+        <img class="full-image" src="{{post.picture.thumbnail}}">          
+        <h2 class="card-title">{{post.title}}</h2>
+      </div>
+      <div class="item item-divider">
+        <div class="row">
+          <div class="col col-50">{{post.category}}</div>
+          <div class="col right">{{post.timeago}}</div>
+        </div>
+      </div>
+      </a>
+    </div>
+    </div>
+    <ion-infinite-scroll on-infinite="loadMore()"></ion-infinite-scroll>
+  </ion-content>
+</ion-view>

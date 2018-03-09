@@ -1,0 +1,142 @@
+/* Empty. Add your own CSS if you like */
+.card a, .fRegionais .col a{
+	text-decoration: none;
+  display: block;
+  cursor: pointer;
+}
+
+.item-body {
+    overflow: hidden!important;
+}
+
+.card .full-image {
+    width: 120%!important;
+    margin: -18px!important;
+    margin-bottom: 5px!important;
+}
+
+.resultados img{width: 32px}
+.resultados .item-body{text-align: center;padding: 0px;}
+.resultados .left, .noticias .left{text-align: left}
+.resultados .right, .noticias .right{text-align: right}
+.resultados .col-equipa {
+    min-width: 42% !important;
+    max-width: 42% !important;
+}
+.resultados .res {
+    min-width: 15vw;
+    font-weight: bold;
+    max-width: 15vw;
+}
+.resultados .res .penalte {
+    font-size: 10px !important;
+    margin-top: -11px !important;
+}
+
+.resultados .item-divider, .noticias .item-divider{
+    padding-top: 0px;
+    padding-bottom: 0px;
+    color: #A4A4A4;
+    font-size: 12px;
+    text-transform: capitalize;
+}
+
+.noticias .item {border-width: 0px!important;background: #fff!important}
+.noticias .item-divider .row, .noticias .item-divider .row .col:first-child{padding: 0px!important;margin:0!important;}
+.resultados .col-equipa:last-child{
+  padding-left: 0;  
+}
+
+.content-post .list{margin: 0 10px;}
+.content-post img{width: 100%}
+.content-post .content-text{
+  font-family: serif;
+  font-size: 20px;
+	line-height: 1.2;
+	text-align:justify
+}
+
+.content-post .title {
+    font-family: sans-serif;
+    font-size:  35px;
+    text-align: left;
+}
+
+.content-post .titleNote {
+    margin-bottom: 12px;
+    font-size: 12px;
+    color: #9b9b9b;
+    font-family: sans-serif;
+}
+
+.about-header {
+  background-color: #434954;
+  padding: 16px;
+  min-height: 150px;
+  text-align: center;
+  margin: 0 -15px;
+  margin-top:-15px;
+}
+
+.about-header img {
+  max-width: 200px;
+  min-height: 115px;
+  margin: 0 auto;
+  padding: 25px 0 20px 0;
+}
+
+.about-info p {
+  color: #697072;
+  text-align: left;
+}
+
+.fRegionais .card {
+  position: relative;
+  text-align: center;
+  overflow: hidden;
+  max-height: 40vw;
+}
+  
+.fRegionais .card img{
+  width: 100vw;
+  margin-left: -10px;
+  -webkit-filter: blur(20px) grayscale(223%); /* Safari 6.0 - 9.0 */
+  filter: blur(1px) grayscale(223%);
+}
+
+.fRegionais .card .card-title {
+  position: absolute;
+  top: 36%;
+  font-size: 18px;
+  width: 100%;
+  font-weight: 900;
+  color: #ae5e64;
+  text-shadow: 1px 0px 1px #000;
+}
+
+.classificacao .equipa, .vencedores .equipa{
+    text-align: left !important;
+    min-width: 30vw;
+    font-weight: bold;
+}
+
+.classificacao .row{text-align: center}
+.classificacao .pontuacao{font-weight: bold}
+.classificacao .header, .vencedores .header{border-bottom: 1px solid #e0e0e0;margin-bottom: 5px;}
+.vencedores .col{padding: 2px!important;text-align: center;}
+.equipa img {max-width: 3vw}
+.equipa .row {padding: 0px!important}
+.tab-item.tab-item-active, .tab-item.active, .tab-item.activated {
+    opacity: 1;
+    color: #11c1f3;
+}
+.tabs-striped.tabs-stable .tab-item.tab-item-active, .tabs-striped.tabs-stable .tab-item.active, .tabs-striped.tabs-stable .tab-item.activated {
+    margin-top: -2px;
+    color: #11c1f3;
+    border-width: 0!important;
+}
+.copyright {
+    color: #bababa;
+    font-size: 3vw;
+    text-transform: uppercase;
+}
